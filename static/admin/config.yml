@@ -1,6 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: kyleo347/netlifycms-nextjs
   branch: master
+  base_url: https://tv5ff0ebm2.execute-api.us-east-1.amazonaws.com/
 media_folder: static/img
 slug:
   encoding: 'ascii'
