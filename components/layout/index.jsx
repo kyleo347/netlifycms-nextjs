@@ -26,8 +26,10 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
   },
   drawer: {
-    width: drawerWidth,
-    flexShrink: 0,
+    [theme.breakpoints.up('sm')]: {
+      width: drawerWidth,
+      flexShrink: 0,
+    },
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
