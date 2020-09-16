@@ -26,6 +26,15 @@ collections:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Publish Date', name: 'date', widget: 'datetime' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: 'Skills'
+        name: 'skills'
+        file: 'content/skills.json'
+        fields:
+          - label: 'Skills'
+            name: 'skills'
+            widget: 'list'
+            fields:
+              - { label: 'Name', name: 'name', widget: 'string' }
   - label: 'Blog'
     name: 'blog'
     folder: 'content/blogPosts'
