@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "cross-env NODE_OPTIONS='--inspect' next",
     "build": "next build",
     "start": "next start",
     "export": "npm run build && next export"
@@ -21,6 +21,7 @@
     "react-dom": "^16.9.0"
   },
   "devDependencies": {
+    "cross-env": "^7.0.2",
     "eslint": "^7.6.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-import": "^2.22.0",
